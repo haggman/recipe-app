@@ -1,7 +1,7 @@
 import streamlit as st
 
 # App Title
-st.set_page_config(page_title="Recipe Haven", page_icon="🍲")
+st.set_page_config(page_title="AI Recipe Haven", page_icon="🍲")
 
 # Home Page Content
 st.title("Welcome to AI Recipe Haven 🍲")
