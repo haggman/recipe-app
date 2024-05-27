@@ -56,7 +56,7 @@ if "history" not in st.session_state:
 
 # Setup done, let's build the page UI
 
-st.set_page_config(page_title="Recipe Haven - AI Cooking Advisor", page_icon="🍲")
+st.set_page_config(page_title="AI Recipe Haven - AI Cooking Advisor", page_icon="🍲")
 st.title("Your AI Cooking Advisor")
 
 for message in st.session_state.history:
