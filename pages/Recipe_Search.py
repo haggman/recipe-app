@@ -4,9 +4,9 @@ import streamlit as st
 # Template code to use Discovery Engine API to call the Search app
 #
 
-project_id = "qwiklabs-gcp-03-c04ca4765545"
+project_id = "YOUR_PROJECT_ID"
 location = "global"
-engine_id = "recipe-data-id"
+engine_id = "recipe-data-id" # Edit if your data store ID is different
 
 from typing import List
 
@@ -85,7 +85,7 @@ def search_sample(
 
 st.set_page_config(page_title="Recipe Haven - AI Recipe Search", page_icon="🍲")
 
-st.title("Your AI Source for Recipies")
+st.title("Your AI Source for Recipes")
 
 query = st.text_input("What recipes would you like me to search for?", value="")
 
@@ -93,21 +93,21 @@ if query:
     st.write(f"Processing '{query}'...")
     st.write("Here are the first 5 recipes I found:")
 
-    results = search_sample(project_id, location, engine_id, query)
+    # results = search_sample(project_id, location, engine_id, query)
 
-    for result in results:
-        st.header(result.document.struct_data["title"])
+    # for result in results:
+    #     st.header(result.document.struct_data["title"])
 
-        st.subheader("Ingredients")
-        i_list = ast.literal_eval(result.document.struct_data["ingredients"])
-        for ingredient in i_list:
-            st.markdown("- " + ingredient)
+    #     st.subheader("Ingredients")
+    #     i_list = ast.literal_eval(result.document.struct_data["ingredients"])
+    #     for ingredient in i_list:
+    #         st.markdown("- " + ingredient)
 
-        st.subheader("Directions")
-        d_list = ast.literal_eval(result.document.struct_data["directions"])
-        for direction in d_list:
-            if direction:
-                st.markdown("- " + direction)   
+    #     st.subheader("Directions")
+    #     d_list = ast.literal_eval(result.document.struct_data["directions"])
+    #     for direction in d_list:
+    #         if direction:
+    #             st.markdown("- " + direction)   
 
-        st.write(result.document.struct_data["uri"])
+    #     st.write(result.document.struct_data["uri"])
  
