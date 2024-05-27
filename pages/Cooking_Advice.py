@@ -10,7 +10,7 @@ import streamlit as st
 
 # Setup done, let's build the page UI
 
-st.set_page_config(page_title="Recipe Haven - AI Cooking Advisor", page_icon="🍲")
+st.set_page_config(page_title="AI Recipe Haven - AI Cooking Advisor", page_icon="🍲")
 st.title("Your AI Cooking Advisor")
 
 #
