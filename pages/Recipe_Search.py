@@ -83,7 +83,7 @@ def search_sample(
 # End template code to use Discovery Engine API to call the Search app
 #
 
-st.set_page_config(page_title="Recipe Haven - AI Recipe Search", page_icon="🍲")
+st.set_page_config(page_title="AI Recipe Haven - AI Recipe Search", page_icon="🍲")
 
 st.title("Your AI Source for Recipies")
 
