@@ -1,3 +1,5 @@
 my_venv
+__pycache__
+.vscode
 Dockerfile
 *.sh
