@@ -1,20 +1,17 @@
-# Base image
+# Use the Python 3 Slim Bookworm base image
 FROM python:3.11-slim-bookworm
 
-# Set working directory
+# Set the working directory
 WORKDIR /app
 
-# Copy in the requirements file
-COPY requirements.txt ./
+# Copy the application files
+COPY . .
 
-# Install Streamlit and libraries from requirements.txt
+# Install the required Python libraries
 RUN pip install -r requirements.txt
 
-# Copy application files
-COPY . /app
-
-# Expose port 8501 for Streamlit
+# Expose the port for the Streamlit app
 EXPOSE 8501
 
-# Start Streamlit app
+# Start the Streamlit app
 CMD ["streamlit", "run", "Home.py"]

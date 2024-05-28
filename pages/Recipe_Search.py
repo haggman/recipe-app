@@ -4,9 +4,9 @@ import streamlit as st
 # Template code to use Discovery Engine API to call the Search app
 #
 
-project_id = "qwiklabs-gcp-03-c04ca4765545"
+project_id = "YOUR_PROJECT_ID"
 location = "global"
-engine_id = "recipe-data-id"
+engine_id = "recipe-data-id" # Edit if your data store ID is different
 
 from typing import List
 
@@ -85,7 +85,7 @@ def search_sample(
 
 st.set_page_config(page_title="AI Recipe Haven - AI Recipe Search", page_icon="🍲")
 
-st.title("Your AI Source for Recipies")
+st.title("Your AI Source for Recipes")
 
 query = st.text_input("What recipes would you like me to search for?", value="")
 
