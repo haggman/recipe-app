@@ -48,7 +48,6 @@ def search_sample(
         serving_config=serving_config,
         query=search_query,
         page_size=5,
-        content_search_spec=content_search_spec,
         query_expansion_spec=discoveryengine.SearchRequest.QueryExpansionSpec(
             condition=discoveryengine.SearchRequest.QueryExpansionSpec.Condition.AUTO,
         ),
