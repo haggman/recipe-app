@@ -24,7 +24,7 @@ st.title("Your AI Cooking Advisor")
 
 #
 # Here's the code to create the chat interface
-# Uncomment this block when instructed
+# Uncomment the below code when instructed
 # 
 
 
